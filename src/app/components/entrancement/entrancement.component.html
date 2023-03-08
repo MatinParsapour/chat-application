@@ -1,1 +1,13 @@
-<p>entrancement works!</p>
+<div class="enter-container">
+  <div class="modal">
+    <form class="input" [formGroup]="userPhone" (submit)="submit()">
+      <section class="welcome-txt">
+        <title class="welcome-msg">Welcome</title>
+        <span>Select your country</span>
+        <span>And enter your phone number</span>
+      </section>
+      <app-phone-number name="phone" (updateUserPhone)="updateUserPhoneNumber($event)"></app-phone-number>
+      <button [disabled]="userPhone.invalid" type="submit" class="btn-primary">Submit</button>
+    </form>
+  </div>
+</div>

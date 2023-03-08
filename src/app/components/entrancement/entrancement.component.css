@@ -1,0 +1,47 @@
+.enter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.modal {
+  width: 40%;
+  height: 50%;
+  box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 50%);
+  background-color: #1e1a30;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+app-phone {
+  width: 100%;
+}
+
+.input {
+  width: 70%;
+  height: 78%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.welcome-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-msg {
+  display: block;
+  color: #5a67ab;
+  font-size: 46px;
+}
+
+.welcome-txt>span {
+  color: #5a67ab;
+}
