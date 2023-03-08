@@ -1,0 +1,55 @@
+.box select {
+  background-color: #2b3740;
+  color: white;
+  padding: 12px 0 12px 0;
+  width: 3em;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.box {
+  display: flex;
+  width: 100%;
+}
+
+.box:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+  padding: 30px;
+}
+
+input {
+  width: 90%;
+  border-radius: 0 5px 5px 0;
+  background-color: #3b3964;
+  border-color: #3b3964;
+  outline-color: #3b3964;
+  border-style: hidden;
+}
+
+.phone {
+  display: flex;
+  justify-content: center;
+}
+
+select::-webkit-scrollbar-track {
+  border-radius: 20px;
+}
+
+select::-webkit-scrollbar {
+  width: 5px;
+}
+
+select::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  height: 20px;
+  background-color: #484866;
+}

@@ -1,1 +1,12 @@
-<p>phone-number works!</p>
+<form class="profile" [formGroup]="phoneInput">
+  <div class="phone">
+    <div class="box" formGroupName="phone">
+      <select #phone name="phone" id="phone" formControlName="country">
+        <option *ngFor="let countryCode of countyCodes" [value]="countryCode.prefix">
+          <span>{{countryCode.prefix}}</span>
+        </option>
+      </select>
+      <input formControlName="number" (input)="changeInput()" type="tel" required [placeholder]="example">
+    </div>
+  </div>
+</form>
